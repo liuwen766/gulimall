@@ -2,6 +2,8 @@ server:
   port: 9000
 
 spring:
+  application:
+    name: gulimall-order
   datasource:
     username: root
     password: 123456
