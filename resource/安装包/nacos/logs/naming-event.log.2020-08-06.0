@@ -1,0 +1,40 @@
+2020-08-06 13:55:59,946 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8010:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-06 13:55:59,950 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.77.1:8010_true,
+
+2020-08-06 13:56:14,671 INFO DEFAULT_GROUP@@service-vod {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8030:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-06 13:56:14,671 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-vod, ips: 192.168.77.1:8030_true,
+
+2020-08-06 13:56:22,825 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8020:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-06 13:56:22,825 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.77.1:8020_true,
+
+2020-08-06 16:17:56,851 INFO DEFAULT_GROUP@@service-cms {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8040:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-06 16:17:56,853 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 192.168.77.1:8040_true,
+
+2020-08-06 16:19:46,869 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8040@DEFAULT@DEFAULT_GROUP@@service-cms, region: unknown, msg: client timeout after 15000, last beat: 1596701970098
+
+2020-08-06 16:20:02,392 INFO DEFAULT_GROUP@@service-cms {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8040:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-06 16:20:02,392 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 
+
+2020-08-06 16:24:47,219 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8010@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1596702269219
+
+2020-08-06 16:24:49,832 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8020@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1596702273767
+
+2020-08-06 16:24:51,938 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8030@DEFAULT@DEFAULT_GROUP@@service-vod, region: unknown, msg: client timeout after 15000, last beat: 1596702273107
+
+2020-08-06 16:25:02,237 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8010:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-06 16:25:02,238 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2020-08-06 16:25:04,837 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8020:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-06 16:25:04,837 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2020-08-06 16:25:06,944 INFO DEFAULT_GROUP@@service-vod {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8030:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-06 16:25:06,944 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-vod, ips: 
+

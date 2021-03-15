@@ -1,0 +1,206 @@
+2020-08-07 08:14:08,304 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8020:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-07 08:14:08,308 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.77.1:8020_true,
+
+2020-08-07 08:14:08,364 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8010:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-07 08:14:08,364 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.77.1:8010_true,
+
+2020-08-07 08:14:08,423 INFO DEFAULT_GROUP@@service-cms {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8040:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-07 08:14:08,424 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 192.168.77.1:8040_true,
+
+2020-08-07 08:14:09,537 INFO DEFAULT_GROUP@@service-vod {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8030:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-07 08:14:09,537 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-vod, ips: 192.168.77.1:8030_true,
+
+2020-08-07 12:58:01,879 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8040@DEFAULT@DEFAULT_GROUP@@service-cms, region: unknown, msg: client timeout after 15000, last beat: 1596776262241
+
+2020-08-07 12:58:05,477 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 192.168.77.1:8040_false,
+
+2020-08-07 12:58:07,008 INFO service: DEFAULT_GROUP@@service-cms {POS} {IP-ENABLED} valid: 192.168.77.1:8040@DEFAULT, region: unknown, msg: client beat ok
+
+2020-08-07 13:01:56,735 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 192.168.77.1:8040_true,
+
+2020-08-07 13:03:51,953 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8040@DEFAULT@DEFAULT_GROUP@@service-cms, region: unknown, msg: client timeout after 15000, last beat: 1596776613459
+
+2020-08-07 13:03:55,529 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 192.168.77.1:8040_false,
+
+2020-08-07 13:03:57,140 INFO service: DEFAULT_GROUP@@service-cms {POS} {IP-ENABLED} valid: 192.168.77.1:8040@DEFAULT, region: unknown, msg: client beat ok
+
+2020-08-07 13:10:31,663 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8010@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1596777012362
+
+2020-08-07 13:10:39,369 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.77.1:8010_false,
+
+2020-08-07 13:10:40,815 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 192.168.77.1:8010@DEFAULT, region: unknown, msg: client beat ok
+
+2020-08-07 15:59:48,485 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8010@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1596787173478
+
+2020-08-07 15:59:50,096 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8030@DEFAULT@DEFAULT_GROUP@@service-vod, region: unknown, msg: client timeout after 15000, last beat: 1596787171751
+
+2020-08-07 15:59:53,486 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8020@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1596787174262
+
+2020-08-07 15:59:54,110 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8040@DEFAULT@DEFAULT_GROUP@@service-cms, region: unknown, msg: client timeout after 15000, last beat: 1596787174984
+
+2020-08-07 16:00:03,710 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8010:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-07 16:00:03,710 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2020-08-07 16:00:05,101 INFO DEFAULT_GROUP@@service-vod {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8030:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-07 16:00:05,101 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-vod, ips: 
+
+2020-08-07 16:00:08,496 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8020:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-07 16:00:08,497 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2020-08-07 16:00:09,123 INFO DEFAULT_GROUP@@service-cms {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8040:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-07 16:00:09,123 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 
+
+2020-08-07 16:09:55,496 INFO DEFAULT_GROUP@@service-cms {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8040:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-07 16:09:55,496 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 192.168.77.1:8040_true,
+
+2020-08-07 16:10:14,255 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8040@DEFAULT@DEFAULT_GROUP@@service-cms, region: unknown, msg: client timeout after 15000, last beat: 1596787796953
+
+2020-08-07 16:10:29,263 INFO DEFAULT_GROUP@@service-cms {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8040:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-07 16:10:29,263 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 
+
+2020-08-07 16:11:25,584 INFO DEFAULT_GROUP@@service-cms {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8040:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-07 16:11:25,584 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 192.168.77.1:8040_true,
+
+2020-08-07 16:11:44,275 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8040@DEFAULT@DEFAULT_GROUP@@service-cms, region: unknown, msg: client timeout after 15000, last beat: 1596787886866
+
+2020-08-07 16:11:59,281 INFO DEFAULT_GROUP@@service-cms {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8040:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-07 16:11:59,281 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 
+
+2020-08-07 16:16:53,236 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8010:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-07 16:16:53,236 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.77.1:8010_true,
+
+2020-08-07 16:16:59,400 INFO DEFAULT_GROUP@@service-cms {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8040:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-07 16:16:59,400 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 192.168.77.1:8040_true,
+
+2020-08-07 16:17:31,969 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8020:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-07 16:17:31,969 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.77.1:8020_true,
+
+2020-08-07 16:17:37,513 INFO DEFAULT_GROUP@@service-vod {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8030:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-07 16:17:37,513 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-vod, ips: 192.168.77.1:8030_true,
+
+2020-08-07 16:19:49,402 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8040@DEFAULT@DEFAULT_GROUP@@service-cms, region: unknown, msg: client timeout after 15000, last beat: 1596788370583
+
+2020-08-07 16:19:55,738 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 192.168.77.1:8040_false,
+
+2020-08-07 16:19:57,394 INFO service: DEFAULT_GROUP@@service-cms {POS} {IP-ENABLED} valid: 192.168.77.1:8040@DEFAULT, region: unknown, msg: client beat ok
+
+2020-08-07 16:38:04,651 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8040@DEFAULT@DEFAULT_GROUP@@service-cms, region: unknown, msg: client timeout after 15000, last beat: 1596789467836
+
+2020-08-07 16:38:09,343 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8010@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1596789469694
+
+2020-08-07 16:38:18,026 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.77.1:8010_false,
+
+2020-08-07 16:38:18,523 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 192.168.77.1:8010@DEFAULT, region: unknown, msg: client beat ok
+
+2020-08-07 16:38:19,657 INFO DEFAULT_GROUP@@service-cms {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8040:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-07 16:38:19,657 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 
+
+2020-08-07 16:38:23,737 INFO DEFAULT_GROUP@@service-cms {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8040:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-07 16:38:23,737 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 192.168.77.1:8040_true,
+
+2020-08-07 16:45:54,446 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8010@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1596789938706
+
+2020-08-07 16:45:57,351 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.77.1:8010_false,
+
+2020-08-07 16:45:58,886 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 192.168.77.1:8010@DEFAULT, region: unknown, msg: client beat ok
+
+2020-08-07 16:51:49,510 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8010@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1596790293999
+
+2020-08-07 16:51:55,401 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.77.1:8010_false,
+
+2020-08-07 16:51:56,852 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 192.168.77.1:8010@DEFAULT, region: unknown, msg: client beat ok
+
+2020-08-07 16:53:14,525 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8010@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1596790376865
+
+2020-08-07 16:53:19,937 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.77.1:8010_false,
+
+2020-08-07 16:53:21,459 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 192.168.77.1:8010@DEFAULT, region: unknown, msg: client beat ok
+
+2020-08-07 16:54:39,536 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8010@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1596790461474
+
+2020-08-07 16:54:45,969 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.77.1:8010_false,
+
+2020-08-07 16:54:47,321 INFO service: DEFAULT_GROUP@@service-edu {POS} {IP-ENABLED} valid: 192.168.77.1:8010@DEFAULT, region: unknown, msg: client beat ok
+
+2020-08-07 16:58:09,444 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8020@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1596790672810
+
+2020-08-07 16:58:09,563 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8010@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1596790672368
+
+2020-08-07 16:58:09,952 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8040@DEFAULT@DEFAULT_GROUP@@service-cms, region: unknown, msg: client timeout after 15000, last beat: 1596790670432
+
+2020-08-07 16:58:10,867 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8030@DEFAULT@DEFAULT_GROUP@@service-vod, region: unknown, msg: client timeout after 15000, last beat: 1596790674561
+
+2020-08-07 16:58:24,462 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8020:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-07 16:58:24,462 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2020-08-07 16:58:24,568 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8010:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-07 16:58:24,568 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2020-08-07 16:58:24,956 INFO DEFAULT_GROUP@@service-cms {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8040:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-07 16:58:24,956 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 
+
+2020-08-07 16:58:25,880 INFO DEFAULT_GROUP@@service-vod {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8030:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-07 16:58:25,880 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-vod, ips: 
+
+2020-08-07 19:13:08,718 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8010:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-07 19:13:08,718 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 192.168.77.1:8010_true,
+
+2020-08-07 19:13:21,282 INFO DEFAULT_GROUP@@service-cms {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8040:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-07 19:13:21,282 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 192.168.77.1:8040_true,
+
+2020-08-07 19:13:26,697 INFO DEFAULT_GROUP@@service-vod {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8030:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-07 19:13:26,697 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-vod, ips: 192.168.77.1:8030_true,
+
+2020-08-07 19:13:32,128 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-NEW} cluster: DEFAULT, new ips size: 1, content: [192.168.77.1:8020:unknown:DEFAULT_1.0_true_false_DEFAULT]
+
+2020-08-07 19:13:32,128 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 192.168.77.1:8020_true,
+
+2020-08-07 21:28:30,075 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8030@DEFAULT@DEFAULT_GROUP@@service-vod, region: unknown, msg: client timeout after 15000, last beat: 1596806894263
+
+2020-08-07 21:28:33,315 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8020@DEFAULT@DEFAULT_GROUP@@service-oss, region: unknown, msg: client timeout after 15000, last beat: 1596806895963
+
+2020-08-07 21:28:33,315 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8010@DEFAULT@DEFAULT_GROUP@@service-edu, region: unknown, msg: client timeout after 15000, last beat: 1596806894118
+
+2020-08-07 21:28:38,469 INFO {POS} {IP-DISABLED} valid: 192.168.77.1:8040@DEFAULT@DEFAULT_GROUP@@service-cms, region: unknown, msg: client timeout after 15000, last beat: 1596806898671
+
+2020-08-07 21:28:45,090 INFO DEFAULT_GROUP@@service-vod {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8030:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-07 21:28:45,090 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-vod, ips: 
+
+2020-08-07 21:28:48,320 INFO DEFAULT_GROUP@@service-oss {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8020:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-07 21:28:48,320 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-oss, ips: 
+
+2020-08-07 21:28:48,322 INFO DEFAULT_GROUP@@service-edu {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8010:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-07 21:28:48,322 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-edu, ips: 
+
+2020-08-07 21:28:53,476 INFO DEFAULT_GROUP@@service-cms {SYNC} {IP-DEAD} cluster: DEFAULT, dead ips size: 1, content: [192.168.77.1:8040:unknown:DEFAULT_1.0_false_false_DEFAULT]
+
+2020-08-07 21:28:53,476 INFO [IP-UPDATED] namespace: public, service: DEFAULT_GROUP@@service-cms, ips: 
+
