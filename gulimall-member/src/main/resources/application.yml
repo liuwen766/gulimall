@@ -1,21 +1,52 @@
+server:
+  port: 8000
+
 spring:
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://192.168.168.50:3306/gulimall_ums
+    url: jdbc:mysql://192.168.168.50:3306/gulimall_ums?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
-
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: localhost:8848
+
+    sentinel:
+      transport:
+        #配置sentinel dashboard地址
+        dashboard: localhost:8080
+
+  redis:
+    port: 6379
+    host: 192.168.77.130
+
+#开启feign对sentinel的支持
+feign:
+  sentinel:
+    enabled: true
 
   application:
     name: gulimall-member
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+
+  session:
+    store-type: redis
+
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
+
   global-config:
     db-config:
       id-type: auto
-server:
-  port: 8000
+
+
+#暴露所有端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
