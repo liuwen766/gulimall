@@ -2,7 +2,7 @@
 
 ### 前言
 
-gulimall` 项目致力于打造一个完整的电商系统，采用现阶段流行技术来实现，采用前后端分离继续编写。
+gulimall 项目致力于打造一个完整的电商系统，采用现阶段流行技术来实现，采用前后端分离继续编写。
 
 ### 项目API接口文档
 
@@ -24,7 +24,7 @@ gulimall（谷粒商城） 项目是一套电商项目，包括前台商城系�
 
 ![UUvXh4.png](https://images.gitee.com/uploads/images/2020/0714/193422_cd40fc31_4914148.png)
 
-#### 主页面
+#### 主页面（后端开发界面）
 
 ![UUv51s.png](https://images.gitee.com/uploads/images/2020/0714/193422_d1a789d5_4914148.png)
 
@@ -126,25 +126,38 @@ gulimall
 - 修改本机的host文件，映射域名端口
 
 ```
-192.168.77.130	gulimall.com
-192.168.77.130	search.gulimall.com
-192.168.77.130  item.gulimall.com
-192.168.77.130  auth.gulimall.com
-192.168.77.130  cart.gulimall.com
-192.168.77.130  order.gulimall.com
-192.168.77.130  member.gulimall.com
-192.168.77.130  seckill.gulimall.com
+192.168.168.50	gulimall.com
+192.168.168.50	search.gulimall.com
+192.168.168.50  item.gulimall.com
+192.168.168.50  auth.gulimall.com
+192.168.168.50  cart.gulimall.com
+192.168.168.50  order.gulimall.com
+192.168.168.50  member.gulimall.com
+192.168.168.50  seckill.gulimall.com
 以上端口换成自己Linux的ip地址
+```
+
+- 启动nginx：
+
+```shell
+#为了挂载，先启动一个nginx，进入容器，取出容器目录/etc/nginx/目录下的文件到linux的/mydata/nginx/conf/目录下，再删除nginx，重启一个添加挂载的nginx，如下：
+docker run -d nginx
+#73f6ccc2bc60是容器id
+docker cp 73f6ccc2bc60:/etc/nginx/ /mydata/nginx/conf/
+docker rm 73f6ccc2bc60
+docker run --name nginx -p 80:80 -v /mydata/nginx/conf/:/etc/nginx/ -v /mydata/nginx/html:/usr/share/nginx/html -d nginx
+docker update nginx --restart=always
 ```
 
 - 修改Linux中Nginx的配置文件
 
-```
-1、在nginx.conf中添加负载均衡的配置    
+```shell
+#1、在nginx.conf中添加负载均衡的配置    
 upstream gulimall {
-        server 192.168.43.182:88;
+        #gulimall服务所在的机器（我这里是启在window上，ip为172.20.25.124）
+        server 172.20.25.124:88;
     }
-2、在gulimall.conf中添加如下配置
+#2、在gulimall.conf中添加如下配置
 server {
     listen       80;
     server_name  gulimall.com  *.gulimall.com hjl.mynatapp.cc;
@@ -154,28 +167,27 @@ server {
 
     #配置静态资源的动态分离
     location /static/ {
-        root   /usr/share/nginx/html;
+        # 这是nginx容器的目录，已挂载到linux的/mydata/nginx/html目录下
+        root   /usr/share/nginx/html; 
     }
 
     #支付异步回调的一个配置
     location /payed/ {
-        proxy_set_header Host order.gulimall.com;        #不让请求头丢失
+        proxy_set_header Host order.gulimall.com;  #不让请求头丢失
         proxy_pass http://gulimall;
     }
 
     location / {
         #root   /usr/share/nginx/html;
         #index  index.html index.htm;
-        proxy_set_header Host $host;        #不让请求头丢失
+        proxy_set_header Host $host;     #不让请求头丢失
         proxy_pass http://gulimall;
     }
+}
 ```
 
 - 克隆前端项目 `renren-fast-vue` 以 `npm run dev` 方式去运行
+- 将html静态文件存放到nginx的指定目录下：/mydata/nginx/html/static/
 - 克隆整个后端项目 `gulimall` ，并导入 IDEA 中完成编译
-
-
-
-### 如果你喜欢，要是觉得对你有帮助的话，请点个赞是对我最大的支持！
 
 

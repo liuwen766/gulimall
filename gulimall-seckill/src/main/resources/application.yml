@@ -18,7 +18,7 @@ spring:
         port: 8719
 
   redis:
-    host: 192.168.77.130
+    host: 192.168.168.50
     port: 6379
 
 

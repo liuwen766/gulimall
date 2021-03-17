@@ -1,5 +1,5 @@
 server:
-  port: 10000
+  port: 10001
   servlet:
     session:
       timeout: 30m
@@ -10,7 +10,7 @@ spring:
   datasource:
     username: root
     password: 123456
-    url: jdbc:mysql://192.168.168.50:3306gulimall_pms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://192.168.168.50:3306/gulimall_pms?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   cloud:
@@ -24,7 +24,7 @@ spring:
         dashboard: localhost:8080
 
   redis:
-    host: 192.168.77.130
+    host: 192.168.168.50
     port: 6379
 
 #开启feign对sentinel的支持

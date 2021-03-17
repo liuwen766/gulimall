@@ -30,6 +30,7 @@
         <module>gulimall-cart</module>
         <module>gulimall-test-sso-client</module>
         <module>gulimall-test-sso-server</module>
+        <module>renren-fast</module>
 
     </modules>
 
