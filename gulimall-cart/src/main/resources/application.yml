@@ -18,7 +18,7 @@ spring:
 
   redis:
     port: 6379
-    host: 192.168.168.50
+    host: 192.168.168.101
 
 #开启feign对sentinel的支持
 feign:

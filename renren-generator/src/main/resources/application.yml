@@ -8,7 +8,7 @@ spring:
     #MySQL配置
     driverClassName: com.mysql.jdbc.Driver
 #    url: jdbc:mysql://localhost:3306/renren_fast?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-    url: jdbc:mysql://192.168.168.50:3306/gulimall_wms?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://192.168.168.101:3306/gulimall_wms?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
     password: 123456
     #oracle配置

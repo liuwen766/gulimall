@@ -15,7 +15,7 @@ spring:
         dashboard: localhost:8080
 
   redis:
-    host: 192.168.168.50
+    host: 192.168.168.101
     port: 6379
 
 #开启feign对sentinel的支持
