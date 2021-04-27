@@ -137,6 +137,18 @@ gulimall
 以上端口换成自己Linux的ip地址
 ```
 
+- 启动mysql
+
+```shell
+docker run --name gulimall_mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=123456 -d -v /home/mysql/:/var/lib/mysql --restart=always mysql --lower_case_table_names=1
+#登录mysql
+docker exec -it gulimall_mysql /bin/bash
+msyql -uroot -p123456
+#导入sql文件，生成需要的数据库和表 文件（6个sql文件）在当前目录下，如下
+resource/sql文件
+
+```
+
 - 启动nginx：
 
 ```shell
@@ -144,20 +156,24 @@ gulimall
 docker run -d nginx
 #73f6ccc2bc60是容器id
 docker cp 73f6ccc2bc60:/etc/nginx/ /mydata/nginx/conf/
-docker rm 73f6ccc2bc60
-docker run --name nginx -p 80:80 -v /mydata/nginx/conf/:/etc/nginx/ -v /mydata/nginx/html:/usr/share/nginx/html -d nginx
+#删不了就加上 -f
+docker rm 73f6ccc2bc60 -f
+docker run --name  gulimall_nginx -d -p 80:80 -v /mydata/nginx/conf/:/etc/nginx/ -v /mydata/nginx/html:/usr/share/nginx/html nginx
 docker update nginx --restart=always
+## 下面修改nginx的配置，每次配置完要重启nginx
+docker restart gulimall_nginx
 ```
 
 - 修改Linux中Nginx的配置文件
 
 ```shell
-#1、在nginx.conf中添加负载均衡的配置    
+#1、在nginx.conf文件中的http块中添加负载均衡的配置  在目录 /mydata/nginx/conf/下
 upstream gulimall {
         #gulimall服务所在的机器（我这里是启在window上，ip为172.20.25.124）
         server 172.20.25.124:88;
     }
-#2、在gulimall.conf中添加如下配置
+#2、在gulimall.conf中添加如下配置   在目录 /mydata/nginx/conf/conf.d/ 下新建  gulimall.conf
+# /mydata/nginx/conf/conf.d/下的所有文件内容 会默认 合并到nginx.conf文件
 server {
     listen       80;
     server_name  gulimall.com  *.gulimall.com hjl.mynatapp.cc;
@@ -185,6 +201,9 @@ server {
     }
 }
 ```
+- 动静分离
+- 将静态文件放入目录 /mydata/nginx/html 下，实现nginx的动静分离
+
 
 - 克隆前端项目 `renren-fast-vue` 以 `npm run dev` 方式去运行
 - 将html静态文件存放到nginx的指定目录下：/mydata/nginx/html/static/
