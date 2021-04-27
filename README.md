@@ -65,7 +65,7 @@ gulimall
 |  renren-generator  | 人人开源项目的代码生成器 |   https://gitee.com/renrenio/renren-generator   |
 |   Elasticsearch    |         搜索引擎         |    https://github.com/elastic/elasticsearch     |
 |      RabbitMQ      |         消息队列         |            https://www.rabbitmq.com             |
-|   Springsession    |        分布式缓存        |    https://projects.spring.io/spring-session    |
+|   SpringSession    |        分布式缓存        |    https://projects.spring.io/spring-session    |
 |      Redisson      |         分布式锁         |      https://github.com/redisson/redisson       |
 |       Docker       |       应用容器引擎       |             https://www.docker.com              |
 |        OSS         |        对象云存储        |  https://github.com/aliyun/aliyun-oss-java-sdk  |
