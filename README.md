@@ -238,7 +238,8 @@ server {
 }
 ```
 - 动静分离
-- 将静态文件放入目录 /mydata/nginx/html 下，实现nginx的动静分离
+- 将静态文件放入目录 /mydata/nginx/html/static/ 下，实现nginx的动静分离
+![img.png](img.png)
 
 
 - 克隆前端项目 `renren-fast-vue` 以 `npm run dev` 方式去运行
