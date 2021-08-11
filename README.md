@@ -173,6 +173,12 @@ docker update redis --restart=always
 
 ```
 
+- 启动rabbitmq
+
+```shell
+docker run -d --name gulimall_rabbitmq --publish 5671:5671 --publish 5672:5672 --publish 4369:4369 --publish 25672:25672 --publish 15671:15671 --publish 15672:15672 rabbitmq:management
+```
+
 - 启动nginx：
 
 ```shell
