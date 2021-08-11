@@ -212,34 +212,49 @@ server {
 #### Nacos环境搭建
 https://blog.csdn.net/xiaotian5180/article/details/105478543
 
+- 源码下载：
+```shell
+git clone https://github.com/alibaba/nacos.git
+```
+- 编译：
+```shell
+mvn -Prelease-nacos -Dmaven.test.skip=true clean install -U
+```
+- 启动参数配置：
+nacos默认使用的是集群方式，启动时会到默认的配置路径下，寻找集群配置文件cluster.conf。 我们源码运行时，通常使用的是单机模式，因此需要在启动参数中进行设置，在jvm的启动参数中，添加-Dnacos.standalone=true
+
+- 启动：进入到nacos-console模块下的com.alibaba.nacos.Nacos类
+- 启动成功后访问：
+http://localhost:8848/nacos/index.html 登录名/密码：nacos/nacos
+  
+
 #### 前端搭建
 
-用VSCode打开renren-fast-vue（如果自己搭建的话），如果是运行完整的代码，可以去课件里找gulimall-admin-vue-app
+- 打开前端工程（二选其一）：
+  
+  renren-fast-vue（如果是自己搭建，从头开始搭建前端代码）
+  
+  gulimall-admin-vue-app（如果想省事，直接使用完整前端代码）
 
-安装node：http://nodejs.cn/download/ 
-选择windows下载。下载完安装。
-
-可以去这里找到v12的版本。（不要用12.0，可以用12.1）
+- 安装node：
+http://nodejs.cn/download/ 选择windows下载。下载完安装。 或者直接使用v12的版本（不要用12.0，可以用12.1）到这里下载：
 https://npm.taobao.org/mirrors/node/
 
-NPM是随同NodeJS一起安装的包管理工具。JavaScript-NPM类似于java-Maven。
+- NPM是随同NodeJS一起安装的包管理工具。JavaScript-NPM类似于java-Maven。
 
-命令行输入node -v 检查配置好了，配置npm的镜像仓库地址，再执行
+- 命令行输入node -v 检查配置好了，配置npm的镜像仓库地址，再执行
 ```shell
 node -v
 npm config set registry http://registry.npm.taobao.org/
 ```
-然后去VSCode的项目终端中输入 npm install，是要去拉取依赖（package.json类似于pom.xml的dependency），但是会报错，然后进行如下操作：
+- 然后去VSCode的项目终端中输入 npm install，是要去拉取依赖（package.json类似于pom.xml的dependency），但是会报错，然后进行如下操作：
 
-启动fast-vue项目
+- 启动fast-vue项目
 ```shell
 npm install
 npm run dev
 ```
-
-结合下面的报错
-
-npm install报错问题
+- 如果有报错：结合下面的报错 npm install报错问题
 https://blog.csdn.net/hancoder/article/details/113821646
 
 
