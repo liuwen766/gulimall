@@ -209,12 +209,16 @@ server {
 - 将html静态文件存放到nginx的指定目录下：/mydata/nginx/html/static/
 - 克隆整个后端项目 `gulimall` ，并导入 IDEA 中完成编译
 
+#### Nacos环境搭建
+https://blog.csdn.net/xiaotian5180/article/details/105478543
+
 #### 前端搭建
 
 用VSCode打开renren-fast-vue（如果自己搭建的话），如果是运行完整的代码，可以去课件里找gulimall-admin-vue-app
 
 安装node：http://nodejs.cn/download/ 
 选择windows下载。下载完安装。
+
 可以去这里找到v12的版本。（不要用12.0，可以用12.1）
 https://npm.taobao.org/mirrors/node/
 
@@ -225,9 +229,13 @@ NPM是随同NodeJS一起安装的包管理工具。JavaScript-NPM类似于java-M
 node -v
 npm config set registry http://registry.npm.taobao.org/
 ```
-然后去VScode的项目终端中输入 npm install，是要去拉取依赖（package.json类似于pom.xml的dependency），但是会报错，然后进行如下操作：
+然后去VSCode的项目终端中输入 npm install，是要去拉取依赖（package.json类似于pom.xml的dependency），但是会报错，然后进行如下操作：
 
 启动fast-vue项目
+```shell
+npm install
+npm run dev
+```
 
 结合下面的报错
 
