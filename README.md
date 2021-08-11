@@ -148,6 +148,30 @@ msyql -uroot -p123456
 resource/sql文件
 
 ```
+- 启动redis
+```shell
+# 在虚拟机中
+mkdir -p /mydata/redis/conf
+touch /mydata/redis/conf/redis.conf
+
+docker pull redis
+
+docker run -p 6379:6379 --name redis \
+-v /mydata/redis/data:/data \
+-v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf \
+-d redis redis-server /etc/redis/redis.conf
+#默认是不持久化的。在配置文件中输入appendonly yes，就可以aof持久化了
+vim /mydata/redis/conf/redis.conf
+# 写入下面内容
+appendonly yes
+# 保存
+
+#重启
+docker restart redis
+#设置开机启动
+docker update redis --restart=always
+
+```
 
 - 启动nginx：
 
@@ -160,8 +184,13 @@ docker cp 73f6ccc2bc60:/etc/nginx/ /mydata/nginx/conf/
 docker rm 73f6ccc2bc60 -f
 docker run --name  gulimall_nginx -d -p 80:80 -v /mydata/nginx/conf/:/etc/nginx/ -v /mydata/nginx/html:/usr/share/nginx/html nginx
 docker update nginx --restart=always
+
+cd /mydata/nginx/html/
+vim index.html
+##随便写写 
 ## 下面修改nginx的配置，每次配置完要重启nginx
 docker restart gulimall_nginx
+##测试 http://192.168.168.50:80
 ```
 
 - 修改Linux中Nginx的配置文件
