@@ -20,7 +20,10 @@ import java.util.Map;
  * @createTime: 2020-05-27 17:14
  **/
 
+//@ControllerAdvice + @ ExceptionHandler 也可以实现全局的异常捕捉
+
 @Slf4j
+//@ControllerAdvice标注在类上，通过“basePackages”能够说明处理哪些路径下的异常。
 @RestControllerAdvice(basePackages = "com.xunqi.gulimall.product.controller")
 public class GulimallExceptionControllerAdvice {
 
@@ -29,6 +32,7 @@ public class GulimallExceptionControllerAdvice {
      * @param e
      * @return
      */
+    //@ExceptionHandler(value = 异常类型.class)标注在方法上
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public R handleValidException(MethodArgumentNotValidException e) {
@@ -44,6 +48,7 @@ public class GulimallExceptionControllerAdvice {
     }
 
 
+    //默认异常处理
     @ExceptionHandler(value = Throwable.class)
     public R handleException(Throwable throwable) {
 
