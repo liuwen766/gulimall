@@ -295,3 +295,6 @@ npm run dev
 https://blog.csdn.net/hancoder/article/details/113821646
 
 
+- 项目首页：
+http://gulimall.com/
+
